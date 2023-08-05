@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 25, 2023 at 03:26 PM
+-- Generation Time: Mar 14, 2023 at 08:31 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -80,6 +80,13 @@ CREATE TABLE `news` (
   `foto` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id_news`, `judul`, `tgl_post`, `deskripsi`, `foto`) VALUES
+(25, 'Masjid Baru', '2023-02-27', '', '63fc132611316.wallpaperflare.com_wallpaper.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -99,7 +106,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `nama_user`, `username`, `password`, `level`) VALUES
-(3, 'Admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin');
+(3, 'Admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
+(40, 'achmad', 'achmad', '698d51a19d8a121ce581499d7b701668', 'user');
 
 -- --------------------------------------------------------
 
@@ -170,13 +178,13 @@ ALTER TABLE `masjid`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id_news` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_news` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `video`
